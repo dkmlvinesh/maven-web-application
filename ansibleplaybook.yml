@@ -1,9 +1,6 @@
-
+---
 - hosts: all
-  become: yes
   tasks:
-  - name: Install git
-    apt:
-      name: git
-      state: present
-      cache_valid_time: 3600
+    - name: Print message
+      debug:
+        msg: Hello Ansible World
